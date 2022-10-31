@@ -1,9 +1,11 @@
+import Navbar from "./components/Navbar"
+
 function App() {
   
 
   return (
     <div>
-     <h1>Navbar Resposive</h1>
+     < Navbar/>
     </div>
   )
 }
