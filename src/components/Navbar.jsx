@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BurgerButton from "./BurgerButton";
 
 
 const NavbarBox = styled.nav`
@@ -35,7 +36,8 @@ function Navbar() {
           <a href="About">About</a>
           <a href="Contact">Contact</a>
           <a href="Blog">Blog</a>
-        </div>
+              </div>
+              <BurgerButton />
       </NavbarBox>
     </div>
   );
