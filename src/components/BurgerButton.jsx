@@ -1,19 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-function BurgerButton() {
-    return (
-      <Burguer>
-        <div className="icon nav-icon-5">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </Burguer>
-    );
+function BurguerButton(props) {
+  return (
+    <Burguer>
+      <div
+        onClick={props.handleClick}
+        className={`icon nav-icon-5 ${props.clicked ? "open" : ""}`}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </Burguer>
+  );
 }
 
-export default BurgerButton;
+export default BurguerButton;
 
 const Burguer = styled.div`
   /* nav-icon-5 */
